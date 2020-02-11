@@ -715,7 +715,7 @@
           if (value === this.reduce(option)) {
             return true
           }
-          if ((this.getOptionLabel(value) === this.getOptionLabel(option)) || (this.getOptionLabel(value) === option)) {
+          if ((this.getOptionLabel(value) === this.getOptionLabel(option) && this.getOptionKey(value) === this.getOptionKey(option) ) || (this.getOptionLabel(value) === option)) {
             return true
           }
           if (this.reduce(value) === this.reduce(option)) {
